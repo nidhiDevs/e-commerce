@@ -1,0 +1,77 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: rgb(169, 168, 168) 0 3px 2px;
+    /* background-color: #db709326; */
+    position: relative;
+}
+
+.card-icon {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+
+.product-btn {
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+    /* margin: 2px;   */
+    width:100%; 
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Image styles */
+.card img {
+    width: 100%;
+    height: 200px;
+    /* object-fit: contain; */
+    
+}
+
+/* Content styles */
+.card-content {
+    padding:0 10px 10px 10px;
+}
+
+/* Price styles */
+.price {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+        /* color: #3498db; */
+}
+
+/* Description styles */
+.description {
+    /* margin-top: 8px; */
+    color: #555;
+    margin-top: 0;
+}
+
+/* Icon styles */
+.icon {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-right: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns for large screens */
+    }
+}
